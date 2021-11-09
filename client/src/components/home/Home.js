@@ -1,26 +1,40 @@
 import React from 'react';
+import '../home/home.css'
 import {
   Link
 } from "react-router-dom";
 
 const Home = (props) => {
-return (
-    <div>
-       <form>
-        <label>
-          Email:
-          <input type="text" name="email" />
-        </label>
-      </form>
+  return (
+    <div className="homePage">
       <form>
-        <label>
-          Password:
-          <input type="text" name="password" />
-        </label>
+        <label>Email</label><br />
+        <input className="shadow" type="text" name="email" />
+
+        <label>Password</label><br />
+        <input className="shadow" type="text" name="password" />
+
+        <div className="loginBtn shadow">
+          <Link to="/profile" className="sUBtn">
+            <span>
+              <div className="sUBtn">Login</div>
+            </span>
+          </Link>
+        </div>
+
+        <div className="submitBtn2 shadow">
+          <Link to="/signup" className="sUBtn">
+            <span>
+              <div className="sUBtn">Signup</div>
+            </span>
+          </Link>
+        </div>
+        <p class="error">
+              <span>Not a member?</span>
+            </p>
       </form>
-     <Link to="/profile"> <input type="submit" value="Login" /></Link>
-      <button ><Link to="/signup">Signup</Link></button>
     </div>
+
   )
 };
 

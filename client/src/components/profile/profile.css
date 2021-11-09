@@ -7,6 +7,128 @@
     width:200px
 }
 
-/* .edit {
-    display: none;
-} */
+.currentSettings form {
+  width: 250px;
+  height:450px;
+  background-color: none;
+  padding: 10px 0px 0px 4px;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.currentSettings form label {
+    margin: 5px 0px 0px 15px;
+  }
+
+.currentSettings input {
+  width: 195px;
+  height: 35px;
+  margin: 3px 0px 0px 10px;
+  border: 0px;
+  font-weight: bold;
+  border: .5px solid rgb(168, 168, 168);
+}
+
+.currentSettings input:focus {
+  background-color: orange;
+}
+
+
+.edit form {
+  width: 250px;
+  height:450px;
+  background-color: none;
+  padding: 10px 0px 0px 4px;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.edit form label {
+    margin: 5px 0px 0px 15px;
+  }
+
+.edit input {
+  width: 195px;
+  height: 35px;
+  margin: 3px 0px 0px 10px;
+  border: 0px;
+  font-weight: bold;
+  border: .5px solid rgb(168, 168, 168);
+}
+
+.edit input:focus {
+  background-color: orange;
+}
+
+
+
+.editBtnDiv {
+  width: 160px;
+  height: 42px;
+  background-color:rgb(66, 181, 196);
+  border-radius: 10px;
+  margin: 50px auto 0px auto;
+  text-align: center;
+  cursor: pointer;
+  clear: both;
+}
+
+.editBtnDiv span {
+  font-weight: normal;
+  font-size: 28px;
+  font-family: "Impact";
+  line-height: 40px;
+}
+
+.editBtnDiv span .editBtn {
+  text-decoration: none;
+  color: white;
+}
+
+.editBtnDiv span .editBtn:hover {
+  color: black;
+}
+
+.logout {
+  width: 160px;
+  height: 42px;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 50px auto 0px auto;
+  text-align: center;
+  cursor: pointer;
+  clear: both;
+}
+
+.logout span {
+  font-weight: normal;
+  font-size: 28px;
+  font-family: "Impact";
+  line-height: 40px;
+}
+
+.logout span .logoutBtn {
+  text-decoration: none;
+  color: white;
+}
+
+.logout span .logoutBtn:hover {
+  color: black;
+}
+
+.shadow {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+}
+
+

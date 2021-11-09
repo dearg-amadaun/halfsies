@@ -1,9 +1,15 @@
-html {
-    display:flex;
-    flex-direction: column;
+.App {
     width: 100%;
 }
 
 .mainContent {
+    display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+    background-color: white;
+    margin-top: 5%;
+}
+
+p {
+    text-align: center;
 }

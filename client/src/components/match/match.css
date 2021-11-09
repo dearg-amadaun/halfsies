@@ -1,0 +1,11 @@
+.matchpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.matchBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
