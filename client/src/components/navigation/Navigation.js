@@ -1,9 +1,11 @@
 import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../navigation/navigation.css'
 import LogoImg from '../images/Asset 1.png';
+
 
 const tabs = [{
   route: "/profile",
