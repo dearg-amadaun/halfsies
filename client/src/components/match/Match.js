@@ -1,15 +1,18 @@
 import React from 'react';
 import blank from '../images/blank.png';
+import '../match/match.css'
 
 const Match = (props) => {
-return (
-    <div>
-      <img className="profPic" alt="usersPhoto" src={blank}></img>
+  return (
+    <div className="matchpage">
       <div>
         <h3>User's Name</h3>
-        <h4>User's Pronoun</h4>
+        <h6>(User's Pronoun)</h6>
       </div>
+      <img className="profPic" alt="usersPhoto" src={blank}></img>
       <h4>User's Tag Line</h4>
+      <div className="matchBtns"><button className="skip">Skip</button>
+      <button className="match">Match</button></div>
       <ul>
         <h4>User's Top 5</h4>
         <li>1</li>
@@ -18,8 +21,6 @@ return (
         <li>4</li>
         <li>5</li>
       </ul>
-      <button className="skip">Skip</button>
-      <button className="match">Match</button>
     </div>
   )
 };
