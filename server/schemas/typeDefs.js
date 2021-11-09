@@ -9,24 +9,6 @@ type User {
   password: String
 }
 
-type Auth {
-  token: ID!
-  user: user
-}
-
-type Query {
-  users: [user]!
-  user(userId: ID!): user
-}
-
-type Mutation {
-  addUser(name: String!, email: String!, password: String!): Auth
-  
-  login(email: String!, password: String!): Auth
-  
-  removeUser(userId: ID!): User
-}
-
   type Profile {
     _id: ID
     name: String
@@ -39,6 +21,7 @@ type Mutation {
   type Auth {
     token: ID!
     profile: Profile
+    user: User
   }
 
   type Comment {
@@ -51,6 +34,9 @@ type Mutation {
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
+    users: [User]!
+    user(userId: ID!): User
+    me: User
   }
 
   type Mutation {
@@ -73,6 +59,12 @@ type Mutation {
     removeMatch(profileId: ID!, profile: String!): Profile
 
     removeComment(profileId: ID!, commentId: ID!): Profile
+
+    addUser(name: String!, email: String!, password: String!): Auth
+  
+    login(email: String!, password: String!): Auth
+  
+    removeUser(userId: ID!): User
   }
 `;
 
