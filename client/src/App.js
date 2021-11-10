@@ -11,6 +11,7 @@ import Comments from './components/comments/Comments';
 import Navigation from './components/navigation/Navigation';
 import { AuthProvider } from "./components/profile/Auth";
 
+
 function App() {
   return (
     <div className="App">

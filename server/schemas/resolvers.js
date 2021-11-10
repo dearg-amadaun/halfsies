@@ -46,11 +46,10 @@ const resolvers = {
       }
     },
 
-    addProfile: async (parent, { profileText }, context) => {
+    addProfile: async (parent, { profileAuthor, about, restaraunt, match }, context) => {
       if (context.user) {
         const profile = await Profile.create({
-          profileText,
-          profileAuthor: context.user.username,
+          profileAuthor, about, restaraunt, match
         });
 
         await User.findOneAndUpdate(
