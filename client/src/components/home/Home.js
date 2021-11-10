@@ -1,38 +1,26 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { AuthContext } from "../profile/Auth";
 import '../home/home.css'
 import {
   Link
 } from "react-router-dom";
+import Login from './Login'
 
 const Home = (props) => {
+    const { currentUser } = useContext(AuthContext);
   return (
     <div className="homePage">
-      <form>
-        <label>Email</label><br />
-        <input className="shadow" type="text" name="email" />
-
-        <label>Password</label><br />
-        <input className="shadow" type="text" name="password" />
-
-        <div className="loginBtn shadow">
-          <Link to="/profile" className="sUBtn">
-            <span>
-              <div className="sUBtn">Login</div>
-            </span>
-          </Link>
-        </div>
-
-        <div className="submitBtn2 shadow">
-          <Link to="/signup" className="sUBtn">
-            <span>
-              <div className="sUBtn">Signup</div>
-            </span>
-          </Link>
-        </div>
-        <p class="error">
-              <span>Not a member?</span>
-            </p>
-      </form>
+        {currentUser ? (
+        <p>
+          You are logged - <Link to="/dashboard">View Dashboard</Link>
+        </p>
+      ) : (
+        <p>
+         <Login/>
+        </p>
+      )}
+      
+    
     </div>
 
   )
