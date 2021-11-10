@@ -8,7 +8,7 @@ import LogoImg from '../images/Asset 1.png';
 
 
 const tabs = [{
-  route: "/profile",
+  route: "/dashboard",
   label: "Profile"
 }, {
   route: "/comments",
@@ -32,7 +32,7 @@ const Navigation = (props) => {
           <header className="header"><img className="logo1" alt="logo" src={LogoImg}></img></header>
             <Nav className="ml-auto">
               <NavItem>
-                <NavLink to="/profile" className="nav-link">
+                <NavLink to="/dashboard" className="nav-link">
                   profile
                 </NavLink>
               </NavItem>

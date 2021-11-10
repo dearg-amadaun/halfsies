@@ -1,7 +1,6 @@
 
 .homePage form {
   width: 250px;
-  height:400px;
   background-color: none;
   padding: 10px 0px 0px 4px;
   border-radius: 15px;
@@ -30,7 +29,7 @@
 }
 
 
-.submitBtn {
+.loginBtn {
   width: 149px;
   height: 42px;
   background-color: orange;
@@ -41,19 +40,19 @@
   clear: both;
 }
 
-.submitBtn span {
+.loginBtn span {
   font-weight: normal;
   font-size: 28px;
   font-family: "Impact";
   line-height: 40px;
 }
 
-.submitBtn span .sUBtn {
+.loginBtn span .sUBtn {
   text-decoration: none;
   color: white;
 }
 
-.submitBtn span .sUBtn:hover {
+.loginBtn span .sUBtn:hover {
   color: black;
 }
 
