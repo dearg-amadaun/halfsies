@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../profile/Auth";
 import firebaseConfig from "../profile/config.js";
-import '../home/home.css'
-import {
-  Link
-} from "react-router-dom";
+import '../home/home.css';
+
 
 const Login = () => {
   const handleSubmit = (e) => {
@@ -22,7 +20,7 @@ const Login = () => {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <div>
+    <div div className="homePage">
       <form onSubmit={handleSubmit}>
         <label>Email</label><br />
         <input className="shadow" type="email" name="email" />
@@ -36,19 +34,7 @@ const Login = () => {
               <div className="sUBtn" >Submit</div>
             </span>
           </div>
-
         </button>
-
-        <button className="submitBtn2 shadow">
-          <Link to="/signup" className="sUBtn">
-            <span>
-              <div className="sUBtn">Signup</div>
-            </span>
-          </Link>
-        </button>
-        <p class="error">
-          <span>Not a member?</span>
-        </p>
       </form>
     </div>
   );

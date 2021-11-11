@@ -11,13 +11,13 @@ const tabs = [{
   route: "/dashboard",
   label: "Profile"
 }, {
-  route: "/comments",
-  label: "Comments"
+  route: "/Messages",
+  label: "Messages"
 }, {
   route: "/maps",
   label: "Maps"
 }, {
-  route: "/match",
+  route: "/matchprofiles",
   label: "Match"
 }]
 
@@ -37,8 +37,8 @@ const Navigation = (props) => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/comments" className="nav-link">
-                  comments
+                <NavLink to="/messages" className="nav-link">
+                  messages
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -47,7 +47,7 @@ const Navigation = (props) => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/match" className="nav-link">
+                <NavLink to="/matchprofiles" className="nav-link">
                   match
                 </NavLink>
               </NavItem>

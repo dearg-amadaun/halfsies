@@ -4,7 +4,6 @@ import '../home/home.css'
 import {
   Link
 } from "react-router-dom";
-import Login from './Login'
 
 const Home = (props) => {
     const { currentUser } = useContext(AuthContext);
@@ -16,7 +15,7 @@ const Home = (props) => {
         </p>
       ) : (
         <p>
-         <Login/>
+          <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link> 
         </p>
       )}
       

@@ -1,9 +1,4 @@
-import axios from 'axios';
-
-const BASEURL = process.env.REACT_APP_BASEURL;
-const APIKEY = process.env.REACT_APP_APIKEY;
-
-const search = async (query) =>
-  axios.get(`${BASEURL}${query}${APIKEY}&rating=pg`);
-
-export default { search };
+const SearchYelp = (term, location) => {
+  return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}`)
+  }
+export default SearchYelp;
