@@ -19,7 +19,17 @@ const Home = (props) => {
          <Login/>
         </p>
       )}
-      
+       
+       <button className="submitBtn2 shadow">
+          <Link to="/signup" className="sUBtn">
+            <span>
+              <div className="sUBtn">Signup</div>
+            </span>
+          </Link>
+        </button>
+        <p class="error">
+          <span>Not a member?</span>
+        </p>
     
     </div>
 

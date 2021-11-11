@@ -3,9 +3,7 @@ import { Redirect } from "react-router-dom";
 import { AuthContext } from "../profile/Auth";
 import firebaseConfig from "../profile/config.js";
 import '../home/home.css'
-import {
-  Link
-} from "react-router-dom";
+
 
 const Login = () => {
   const handleSubmit = (e) => {
@@ -39,16 +37,7 @@ const Login = () => {
 
         </button>
 
-        <button className="submitBtn2 shadow">
-          <Link to="/signup" className="sUBtn">
-            <span>
-              <div className="sUBtn">Signup</div>
-            </span>
-          </Link>
-        </button>
-        <p class="error">
-          <span>Not a member?</span>
-        </p>
+       
       </form>
     </div>
   );
