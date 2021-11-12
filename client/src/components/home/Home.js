@@ -6,20 +6,31 @@ import {
 } from "react-router-dom";
 
 const Home = (props) => {
-    const { currentUser } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
   return (
     <div className="homePage">
-        {currentUser ? (
+      {currentUser ? (
         <p>
           You are logged - <Link to="/dashboard">View Dashboard</Link>
         </p>
       ) : (
         <p>
-          <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link> 
+          <div className="logout shadow">
+            <Link to="/login">
+            <span><div className="logoutBtn shadow">Log In</div></span>
+            </Link>
+          </div>
+          <br/>
+          <h1>or</h1>
+          <div className="logout shadow">
+            <Link to="/signup">
+              <span><div className="logoutBtn shadow">Sign Up</div></span>
+            </Link>
+          </div>
         </p>
       )}
-      
-    
+
+
     </div>
 
   )

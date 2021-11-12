@@ -13,6 +13,7 @@ import MessageScreen from './components/comments/MessageScreen';
 import Navigation from './components/navigation/Navigation';
 import { AuthProvider } from "./components/profile/Auth";
 import MatchProfiles from './components/match/MatchProfiles';
+import SearchPpl from './components/match/SearchPpl';
 
 
 
@@ -30,8 +31,9 @@ function App() {
                 <Route exact path="/dashboard" component={Dashboard} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={Signup} />
-                <Route path="/matchprofiles" component={Match} />
-                <Route path="/match" component={MatchProfiles} />
+                <Route path="/matchprofiles" component={MatchProfiles} />
+                <Route path="/match" component={Match} />
+                <Route path="/searchppl" component={SearchPpl} />
                 <Route path="/maps" component={Maps} />
                 <Route path="/messages" component={Messages} />
                 <Route path="/convo" component={Convo} />

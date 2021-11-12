@@ -13,3 +13,11 @@
 p {
     text-align: center;
 }
+
+.grow { 
+  transition: transform .2s; 
+}
+  
+.grow:hover { 
+  transform: scale(1.2);
+}

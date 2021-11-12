@@ -11,22 +11,30 @@ const Dashboard = () => {
     return <Redirect to="/home" />;
   }
   return (
-    <div>
+    <div className="currentSettings">
       {currentUser && (
         <>
-          <img
+         <div className="centerImg"><img className="profpic shadow"
             src={currentUser.photoURL}
             width="100"
             height="100"
             alt="avatar"
-          />
-          <p>{currentUser.displayName}</p>
-          <p>{currentUser.email}</p>
+          /></div>
+          
+          <div className="name"><h1>{currentUser.displayName}</h1>
+          <h2>{currentUser.email}</h2>
+          <h3>{currentUser.tagline}</h3>
+          <p>{currentUser.favorites}</p></div>
         </>
       )}
+      <div className="logout shadow">
+        <Link to="/searchppl">
+          <span>
+            <div className="logoutBtn shadow">Start Swiping</div>
+          </span>
+        </Link>
+      </div>
       <AuthProvider />
-      <br />
-      <br />
       <br />
 
       <div className="logout shadow">

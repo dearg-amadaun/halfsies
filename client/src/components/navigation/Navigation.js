@@ -25,11 +25,11 @@ const tabs = [{
 const Navigation = (props) => {
   return (
     <div>
-      <header className="header d-lg-none"><img className="logo1 d-lg-none" alt="logo" src={LogoImg}></img></header>
+      <header className="header d-lg-none"><img className="logo1 d-lg-none grow" alt="logo" src={LogoImg}></img></header>
       <div>
         <nav className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top" role="navigation">
           <div className="container-fluid">
-          <header className="header"><img className="logo1" alt="logo" src={LogoImg}></img></header>
+          <header className="header"><img className="logo1 grow" alt="logo" src={LogoImg}></img></header>
             <Nav className="ml-auto">
               <NavItem>
                 <NavLink to="/dashboard" className="nav-link">

@@ -1,8 +1,8 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import {initializeApp} from 'firebase/app';
+import 'firebase/auth';
 
-const firebaseConfig = firebase.initializeApp({
-    apiKey: "AIzaSyC_ZJwT1qjdk6bVOnLotcvb1l4_cDMPTEs",
+const firebaseConfig =initializeApp({
+  apiKey: "AIzaSyC_ZJwT1qjdk6bVOnLotcvb1l4_cDMPTEs",
   authDomain: "messenger-42e2a.firebaseapp.com",
   databaseURL: "https://messenger-42e2a-default-rtdb.firebaseio.com",
   projectId: "messenger-42e2a",
@@ -13,4 +13,5 @@ const firebaseConfig = firebase.initializeApp({
 });
 
 export default firebaseConfig;
+
 

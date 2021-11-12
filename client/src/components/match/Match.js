@@ -1,17 +1,19 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
+import '../match/match.css';
+
 
 const Match = ({ name, about, profilePic, favorites }) => {
   return (
-    <Link to={`/match/${name}`}>
-      <div className="match">
-        <Avatar className="match__image" src={profilePic} />
-        <div className="match__details">
+    <Link to={`/messagescreen/${name}`}>
+      <div className="match shadow grow">
+        <Avatar className="match-image" src={profilePic} />
+        <div className="match-details">
           <h2>{name}</h2>
           <p>{about}</p>
         </div>
-        <p className="match__timestamp">{favorites}</p>
+        <p className="match-timestamp">{favorites}</p>
       </div>
     </Link>
   );

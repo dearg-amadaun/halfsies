@@ -6,16 +6,8 @@ import '../home/home.css';
 
 
 const Login = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { email, password } = e.target.elements;
-    try {
-      firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
-    } catch (error) {
-      alert(error);
-    }
-  };
-  const { currentUser } = useContext(AuthContext);
+ 
+  const { currentUser,handleSubmit,signInWithGoogle } = useContext(AuthContext);
   if (currentUser) {
     return <Redirect to="/dashboard" />;
   }
@@ -32,6 +24,7 @@ const Login = () => {
           <div type="submit">
             <span>
               <div className="sUBtn" >Submit</div>
+             < div className="googlebtn" onClick={(e) =>signInWithGoogle(e)}>Google Login</div>
             </span>
           </div>
         </button>
