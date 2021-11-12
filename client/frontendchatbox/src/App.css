@@ -1,9 +1,0 @@
-html {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.mainContent {
-    justify-content: center;
-}

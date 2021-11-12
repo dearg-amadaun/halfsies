@@ -2,27 +2,17 @@ import React, { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../profile/Auth";
 import firebaseConfig from "../profile/config.js";
-import '../home/home.css'
-import {
-  Link
-} from "react-router-dom";
+import '../home/home.css';
+
 
 const Login = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { email, password } = e.target.elements;
-    try {
-      firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
-    } catch (error) {
-      alert(error);
-    }
-  };
-  const { currentUser } = useContext(AuthContext);
+ 
+  const { currentUser,handleSubmit,signInWithGoogle } = useContext(AuthContext);
   if (currentUser) {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <div>
+    <div div className="homePage">
       <form onSubmit={handleSubmit}>
         <label>Email</label><br />
         <input className="shadow" type="email" name="email" />
@@ -34,21 +24,10 @@ const Login = () => {
           <div type="submit">
             <span>
               <div className="sUBtn" >Submit</div>
+             < div className="googlebtn" onClick={(e) =>signInWithGoogle(e)}>Google Login</div>
             </span>
           </div>
-
         </button>
-
-        <button className="submitBtn2 shadow">
-          <Link to="/signup" className="sUBtn">
-            <span>
-              <div className="sUBtn">Signup</div>
-            </span>
-          </Link>
-        </button>
-        <p class="error">
-          <span>Not a member?</span>
-        </p>
       </form>
     </div>
   );

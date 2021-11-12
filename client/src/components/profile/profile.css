@@ -4,7 +4,17 @@
 }
 
 .profPic {
-    width:200px
+    align-items: center;
+    border-radius: 15%;
+}
+
+.centerImg {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  text-align: center;
 }
 
 .currentSettings form {

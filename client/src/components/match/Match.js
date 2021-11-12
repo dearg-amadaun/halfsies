@@ -1,28 +1,22 @@
-import React from 'react';
-import blank from '../images/blank.png';
-import '../match/match.css'
+import React from "react";
+import Avatar from "@material-ui/core/Avatar";
+import { Link } from "react-router-dom";
+import '../match/match.css';
 
-const Match = (props) => {
+
+const Match = ({ name, about, profilePic, favorites }) => {
   return (
-    <div className="matchpage">
-      <div>
-        <h3>User's Name</h3>
-        <h6>(User's Pronoun)</h6>
+    <Link to={`/messagescreen/${name}`}>
+      <div className="match shadow grow">
+        <Avatar className="match-image" src={profilePic} />
+        <div className="match-details">
+          <h2>{name}</h2>
+          <p>{about}</p>
+        </div>
+        <p className="match-timestamp">{favorites}</p>
       </div>
-      <img className="profPic" alt="usersPhoto" src={blank}></img>
-      <h4>User's Tag Line</h4>
-      <div className="matchBtns"><button className="skip">Skip</button>
-      <button className="match">Match</button></div>
-      <ul>
-        <h4>User's Top 5</h4>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-    </div>
-  )
+    </Link>
+  );
 };
 
 export default Match;
