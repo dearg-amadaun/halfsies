@@ -11,7 +11,7 @@ type User {
 
   type Profile {
     _id: ID
-    name: String
+    profileAuthor: String
     about: [String]!
     restaraunt: [String]!
     match: [String]!
