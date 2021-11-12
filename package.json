@@ -2,7 +2,7 @@
   "name": "halfsies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
+  "homepage": ".",
   "dependencies": {
     "@mars/heroku-js-runtime-env": "^3.0.2",
     "bcrypt-nodejs": "^0.0.3",
