@@ -21,3 +21,6 @@ WHEN I want to, I can see if anyone in my area wants to meet up and go to any of
 
 
 
+![Screenshot2](https://user-images.githubusercontent.com/83887301/141398079-cba00691-d163-43c0-b930-be20ed24a376.jpg)
+![screenshot1](https://user-images.githubusercontent.com/83887301/141398080-4f9a721f-2f0d-498f-8dce-fce3a60a47c3.jpg)
+![Screenshot3](https://user-images.githubusercontent.com/83887301/141398081-2609bab8-d2be-4e62-8743-3b521bf61640.jpg)
